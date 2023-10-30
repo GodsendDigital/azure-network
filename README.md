@@ -48,12 +48,12 @@ Log into VM1 by using the IP Address and entering it into the RDP. Once I'm in, 
 <img src="https://i.imgur.com/5HQRK4v.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+To block all incoming traffic from the ICMP, I have to go back into the Microsoft Azure Portal. Then go in the VM2 settings to access the Network Security Group that acts as a firewall. Once I am inside the Network Security Group I go to Inbound Traffic and create a rule to deny all inbound traffic from the ICMP to start the non-stop ping that I made a command to do in the powershell ise. The rule will stop all traffic and only show up as request time out in wireshark and powershell ise.
 </p>
 <br />
 
 <img src="https://i.imgur.com/JcI3MSZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I want to log in the VM2 via SSH from VM1 with powershell ise. In order to do that I bring up powershell ise and type the command "ssh username@ip address" then hit enter. My username is jumpman23 and private IP address of VM2 is 10.0.0.5 so I enter the command ssh jumpman23@10.0.0.5. Then I follow up with the password. Now I am log into the VM2 via SSH and I can use commands in powershell ise.
 </p>
