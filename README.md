@@ -40,7 +40,7 @@ First step is to open up the Azure Portal and create a resource group. After the
 <img src="https://i.imgur.com/HD1uAjv.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log into VM1 by using the IP Address and entering it into the RDP. Once I'm in, I download wireshark from the internet. Wireshark is an application that monitor internet traffic from all kinds of ports. I get on wireshark and bring up another app call powershell ise. Powershell ise allow users to use commands to create internet traffic inside wireshark. I begin to ping the IP address of the 2nd Virtual Machine through the ICMP port and the traffic is showing up in wireshark. Now I want to ping the VM2 IP Address non-stop and then block all incoming traffic from the ICMP Port.
 </p>
 <br />
 
